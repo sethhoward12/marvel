@@ -2,35 +2,75 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
+<title>Marvel Movies Website</title>
 
-<head>
-	<meta charset="utf-8">
-	<title>About</title>
-	<link rel="stylesheet" type="text/css" href="marvel_css.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+          crossorigin="anonymous">
+
+          
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">                    
 
 </head>
 
-
-
 <body>
 	<header>
-	<nav>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Brand/site name -->
+          <a class="navbar-brand" href="#">Marvel Movies</a>
+          <!-- Hamburger icon -->
+          <button class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Div to hide stuff if we have hamburger -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Nav bar item list -->
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <!-- This is the style for the 'active' page -->
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="avengers_infinity_war.html">Avengers: Infinity War</a>
+              </li>
+              <li class="nav-item">
+                <!-- This is the style for the 'active' page -->
+                <a class="nav-link" aria-current="page" href="black_panther.html">Black Panther</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="iron_man.html">Iron Man</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="thor.html">Thor</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+		<div class="container">
 		<h1>About</h1>
-		
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="iron_man.html">Iron Man</a></li>
-			<li><a href="thor.html">Thor</a></li>
-			<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-			<li><a href="black_panther.html">Black Panther</a></li>
-		</ul>
-	</nav>
-	
-	</header>
-	<br>
-	<br>
-	<br>
 	<h3>Background of Marvel Movies</h3>
 	<p>This is where the Marvel Movies begin...</p>
 	<p>The publishing company, Marvel, has been creating primarily comic 
@@ -78,6 +118,13 @@
 			<li>Black Widow &#45; 2021</li>
 			<li>Shang-Chi and The Legend of The Ten Rings &#45; 2021</li>
 		</ol>
+
+<div class="alert alert-dismissible alert-danger">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>There are more movies coming!</strong>
+</div>
+
+
 <h3>Future Marvel Movies</h3>
 <li>Eternals</li>
 <li>Spider-Man: No Way Home</li>
@@ -90,9 +137,11 @@
 <li>Fantastic Four</li>
 <br>
 	<br>
-
-<footer> Website created by Buck and Paige </footer>
 <footer> Design by Seth Howard </footer>
-
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous">
+    </script>
 </body>
 </html>
